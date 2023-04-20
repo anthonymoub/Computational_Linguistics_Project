@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Find Similar Verses</title>
-</head>
-<body>
-	<h1>Find Similar Verses</h1>
-	<form action="/find_similar" method="post">
-		<label for="quote">Enter Quote:</label>
-		<input type="text" id="quote" name="quote"><br><br>
-		<input type="submit" value="Submit">
-	</form>
-
-	{% if result %}
-		<h2>Top 5 Similar Verses:</h2>
-		<ul>
-		{% for verse in result %}
-			<li>{{ verse }}</li>
-		{% endfor %}
-		</ul>
-	{% endif %}
-</body>
+    <head>
+        <title>Basic App</title>
+    </head>
+    <body>
+        <h1>Basic App</h1>
+        <form method="POST" action="/">
+            <label for="message">Enter a message:</label>
+            <input type="text" id="message" name="message">
+            <button type="submit">Submit</button>
+        </form>
+        {% if message %}
+            <p>Input: {{message[5]}}</p>
+            <p>{{message[0]}}</p>  
+            <p>{{ message[1]}}</p>
+            <p>{{ message[2]}}</p>
+            <p>{{ message[3]}}</p>
+            <p>{{ message[4]}}</p>
+        {% endif %}
+    </body>
 </html>

@@ -22,8 +22,9 @@ def find_similar_vectors(search , embedded_quraan):
     embedded_quraan = embedded_quraan.dropna(subset=['Embeddings'])
     embedded_quraan["similarities"] = embedded_quraan['Embeddings'].apply(lambda x: cosine_similarity(x, search_vector))
     embedded_quraan = embedded_quraan.sort_values('similarities', ascending=False)
-    return embedded_quraan['Verse'][0:5]
-
+    results = embedded_quraan['Verse'][0:5]
+    results = results.reset_index()
+    return results['Verse'][0:5]
  
 
 
