@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Flask App</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/style.css') }}">
+</head>
+<body>
+	<div class="bg-img">
+		<p>Using AI and NLP to unite religions</p>
+	</div>		
+	<div class="center">
+		<form method="POST" action="/" style="justify-content: center;">
+			<input type="text" id="message" name="message" placeholder="Enter a Bible verse">
+			<button type="submit">Submit</button>
+		</form>
+		{% if message %}<br>
+
+		<div class="output">
+			<p>Input <br><br> {{message[5]}}</p> <br>
+			<p> Output <br><br> </p> 
+			<p>{{message[0]}}</p>  
+			<p>{{ message[1]}}</p>
+			<p>{{ message[2]}}</p>
+			<p>{{ message[3]}}</p>
+			<p>{{ message[4]}}</p>
+		</div>
+		{% endif %}
+
+	</div>
+</body>
+</html>
