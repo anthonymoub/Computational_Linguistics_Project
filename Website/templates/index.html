@@ -10,7 +10,12 @@
 	</div>		
 	<div class="center">
 		<form method="POST" action="/" style="justify-content: center;">
-			<input type="text" id="message" name="message" placeholder="Enter a Bible verse">
+			<input type="text" id="message" name="message" placeholder="Enter a Bible verse" list="sentences">
+			<datalist id="sentences">
+				{% for sentence in sentences %}
+				<option value="{{ sentence }}">
+				{% endfor %}
+			</datalist>
 			<button type="submit">Submit</button>
 		</form>
 		{% if message %}<br>
