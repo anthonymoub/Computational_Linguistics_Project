@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Flask App</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='/style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="bg-img">
+      <p>Using AI and NLP to unite religions</p>
+    </div>
+
+    <div class="michael_angelo">
+      <div class="layer left"></div>
+      <div class="layer right"></div>
+      <div class="text">
+        <h1>Verse Recommender</h1>
+      </div>
+    </div>
+    
+
+    <div class="center">
+      <div class="container">
+        <div class="christians">
+          <br>
+          <form method="POST" action="/" style="justify-content: center">
+            <input
+              type="text"
+              id="message"
+              name="message"
+              placeholder="Enter a Bible verse"
+              list="sentences"
+            />
+            <datalist id="sentences">
+              {% for sentence in sentences %}
+              <option value="{{ sentence }}">{% endfor %}</option>
+            </datalist>
+
+            <button type="submit">Submit</button>
+          </form>
+          {% if message %}<br />
+
+          <div class="output" style="text-align: center">
+            <div class="input">
+              <p
+                style="
+                  font-size: 25px;
+                  font-family: engr, serif;
+                  font-weight: bold;
+                "
+              >
+                Bible Verse
+              </p>
+            </div>
+            <hr />
+            <p>
+              <br /><br />
+              {{message[5]}}
+            </p>
+            <br />
+            <br />
+            <p
+              style="
+                font-size: 25px;
+                font-family: engr, serif;
+                font-weight: bold;
+              "
+            >
+              Equivalent Quraan Verses
+            </p>
+            <hr />
+            <br /><br />
+            <p>{{message[0]}}</p>
+            <br />
+            <p>{{ message[1]}}</p>
+            <br />
+            <p>{{ message[2]}}</p>
+            <br />
+            <p>{{ message[3]}}</p>
+            <br />
+            <p>{{ message[4]}}</p> <br>
+          </div>
+          {% endif %}
+        </div>
+
+        <div class="muslims">
+          <br>
+          <form method="POST" action="/" style="justify-content: center">
+            <input
+              type="text"
+              id="message2"
+              name="message2"
+              placeholder="Enter a Quraan verse"
+              list="sentences_q"
+            />
+            <datalist id="sentences_q">
+              {% for sentence in sentences_q %}
+              <option value="{{ sentence }}">{{ sentence }}</option>
+              {% endfor %}
+            </datalist>
+
+            <button type="submit2">Submit</button>
+          </form>
+          {% if message2 %}<br />
+
+          <div class="output2">
+            <div class="input">
+              <p
+                style="
+                  font-size: 25px;
+                  font-family: engr, serif;
+                  font-weight: bold;
+                "
+              >
+                Quraan Verse
+              </p>
+            </div> 
+            <hr class="hr2"> <br />
+              <p> {{message2[5]}} <br />
+
+            </p>
+            <br />
+            <p
+            style="
+              font-size: 25px;
+              font-family: engr, serif;
+              font-weight: bold;
+            "
+          >Equivalent Bible Verses<br />
+          <hr class="hr2">
+          <br /></p>
+            <p>{{message2[0]}}</p> <br>
+            <p>{{ message2[1]}}</p> <br> 
+            <p>{{ message2[2]}}</p> <br>
+            <p>{{ message2[3]}}</p> <br>
+            <p>{{ message2[4]}}</p> <br>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

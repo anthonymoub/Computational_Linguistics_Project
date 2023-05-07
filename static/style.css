@@ -1,0 +1,221 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.bg-img {
+	background-image: url('images/Background.png');
+	background-repeat: no-repeat;
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+
+}
+
+hr {
+	width: 50%;
+	margin: auto;
+	border-color: rgb(0, 0, 0);
+	border-width: 2px;
+}
+
+.hr2 {
+	width: 50%;
+	margin: auto;
+	border-color: black;
+	border-width: 2px;
+}
+
+
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: start;
+	gap: 250px;
+
+}
+
+@media screen and (min-width: 1920px) {
+	.container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: start;
+		gap: 700px;
+	
+	}
+  }
+  
+
+.christians {
+text-align: center;
+position: relative;
+padding-left: 5%;
+}
+
+.christians output {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+
+.muslims {
+	text-align: center;
+	padding-right: 5%;
+	}
+	
+
+
+	
+.output{
+	justify-content: center;
+	background-color: rgba(32, 53, 121, 0.4); 
+	border: 2px solid black
+	}
+	
+
+.output2{
+	justify-content: center;
+	background-color: rgba(121, 32, 32, 0.4); 
+	border: 2px solid black
+	}
+	
+
+.output p {
+	text-align: center !important;
+  }
+  
+
+
+
+.bg-img p{
+	color: white;
+	font-size: 45px;
+	text-align: center;
+	padding-top: 40%;
+}
+
+.center {
+	background-image: url('images/combined.png');
+	background-repeat: no-repeat;
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+	justify-content: center;
+}
+
+.center p {
+
+	color: white;
+}
+
+form {
+	margin-left: 2%;
+}
+
+input[type=text] {
+	width: 500px;
+	height: 30px;
+	padding-left: 5%;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+}
+
+
+input[type=text2] {
+	width: 500px;
+	height: 30px;
+	padding-left: 5%;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+
+}
+  
+
+button[type=submit] {
+	background-color: #12247c;
+	color: white;
+	padding: 12px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+
+
+.michael_angelo {
+	height: 250px;
+	background-image: url('images/ma2.png');
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+  }
+  
+.layer {
+position: absolute;
+top: 0;
+bottom: 0;
+width: 50%;
+}
+
+.left {
+left: 0;
+background-color: rgba(12, 5, 35, 0.35);
+}
+
+.right {
+right: 0;
+background-color:  rgba(100, 21, 19, 0.35);
+}
+
+.text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	z-index: 1;
+}
+  
+.text h1 {
+	color: #fff;
+	font-size: 4em;
+	margin: 0;
+	padding: 0;
+}
+
+
+#message2, button[type=submit2] {
+	display: inline-block;
+  }
+  
+button[type=submit2] {
+	background-color: #c50e0e;
+	color: white;
+	padding: 12px 20px;
+	margin: 8px 0;
+	margin-left: 10px; /* change this value to adjust the distance between the input and the button */
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+
+
+button[type=submit]:hover {
+	background-color: rgba(255, 0, 0, 0.598);
+}
+
+button[type=submit2]:hover {
+	background-color: #12247c;
+}
