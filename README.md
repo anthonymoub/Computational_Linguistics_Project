@@ -45,7 +45,7 @@ As for Usage, While in the projects directory, the website can be rendered by do
 
 A demo of the project can be found below:
 
-[![Demo](data/demo.png)](https://www.youtube.com/watch?v=dsTI9qa58wY)
+[![Demo](Data/demo.png)](https://www.youtube.com/watch?v=dsTI9qa58wY)
 
 
 
