@@ -38,7 +38,7 @@ As for Usage, While in the projects directory, the website can be rendered by si
 
 A demo of the project can be found below:
 
-[![IMAGE ALT TEXT](data/demo.png)](https://www.youtube.com/watch?v=dsTI9qa58wY "Using AI and NLP to unite religions")
+![IMAGE ALT TEXT](data/demo.png)(https://www.youtube.com/watch?v=dsTI9qa58wY "Using AI and NLP to unite religions")
 
 
 
