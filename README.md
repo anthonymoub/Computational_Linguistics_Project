@@ -31,10 +31,17 @@ Moving forward, the task was simple. After creating numeric vector representaito
 5) A Flask App was developed for the front end that enables users to chose a verse from each book. This app takes the users input, runs the model through the python files and returns the most similar verses from the other book. 
 
 
-Usage:
+# Usage:
 
 All files necessary for recreating the project are available in the Repo. 
-As for Usage, While in the projects directory, the website can be rendered by simply running the main.py file through the command line. 
+As for Usage, While in the projects directory, the website can be rendered by doing the following:
+
+1) Unzip the embedded_bible.pickle.zip and embedded_quraan.pickle.zip
+
+2) Download requirements from requirements.txt 
+
+3) Run python main.py
+
 
 A demo of the project can be found below:
 
